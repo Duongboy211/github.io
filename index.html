@@ -15,24 +15,43 @@
             line-height: 1.6;
         }
         header {
+            position: relative;
             background: url('images/data main/architecture-bg.jpg') no-repeat center center/cover;
-            padding: 40px 20px;
-            text-align: center;
-            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Làm tối ảnh */
         }
         header h1 {
-            font-size: 2.5em;
+            position: relative;
+            font-size: 4em;
             text-transform: uppercase;
             letter-spacing: 3px;
+            z-index: 1;
+        }
+        nav {
+            position: relative;
+            z-index: 1;
         }
         nav ul {
             list-style: none;
             padding: 0;
             margin-top: 20px;
+            display: flex;
+            gap: 20px;
         }
         nav ul li {
             display: inline;
-            margin: 0 15px;
         }
         nav a {
             text-decoration: none;
