@@ -5,86 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-studio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('./images/background.png') no-repeat center center fixed;
-            background-size: cover;
-            color: #eee;
-            line-height: 1.6;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            background: rgba(26, 26, 26, 0.8);
-            width: 100%;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .logo h1 {
-            font-size: 3em;
-            color: #ffcc00;
-        }
-        section {
-            text-align: center;
-            padding: 20px;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            margin: 0;
-            padding: 0;
-        }
-        nav a {
-            text-decoration: none;
-            color: #ffcc00;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #fff;
-        }
-        footer {
-            background: rgba(26, 26, 26, 0.8);
-            padding: 10px;
-            text-align: center;
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>E-studio</h1>
-        </div>
+        <h1>E-studio</h1>
     </header>
 
-    <section id="home">
-        <h2>Chào mừng đến với E-studio</h2>
-        <p>Kiến trúc sáng tạo, hài hòa với thiên nhiên và phong cách độc đáo.</p>
-    </section>
+    <main>
+        <section>
+            <h2>Chào mừng đến với E-studio</h2>
+            <p>Kiến trúc sáng tạo, hài hòa với thiên nhiên và phong cách độc đáo.</p>
 
-    <section id="contact">
-        <h2>Liên hệ với chúng tôi</h2>
-        <p>Điền thông tin hoặc ghé thăm văn phòng để trao đổi trực tiếp.</p>
-    </section>
+            <!-- Chèn hình ảnh -->
+            <img src="images/datamain/architecture-bg.jpg" alt="Ảnh kiến trúc" style="max-width: 100%; height: auto;">
+        </section>
+
+        <section>
+            <h2>Liên hệ với chúng tôi</h2>
+            <p>Điền thông tin hoặc ghé thăm văn phòng để trao đổi trực tiếp.</p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 E-studio. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
