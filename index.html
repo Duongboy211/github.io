@@ -10,9 +10,10 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: #111 url('https://estudio-design.github.io/images/background.jpg') no-repeat center center fixed;
+            background: url('./images/background.png') no-repeat center center fixed;
             background-size: cover;
             color: #eee;
+            line-height: 1.6;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -20,22 +21,44 @@
             align-items: center;
         }
         header {
-            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
+            background: rgba(26, 26, 26, 0.8);
             width: 100%;
-            text-align: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .logo h1 {
             font-size: 3em;
             color: #ffcc00;
-            margin: 0;
         }
         section {
             text-align: center;
             padding: 20px;
         }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ffcc00;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
         footer {
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(26, 26, 26, 0.8);
             padding: 10px;
             text-align: center;
             width: 100%;
@@ -64,3 +87,4 @@
     </footer>
 </body>
 </html>
+
